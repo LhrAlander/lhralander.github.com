@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+}
+.head {
+	width: 100%;
+	height: 50px;
+	padding:1px;
+	background-color: #CAFFFF;
+}
+.head p {
+	margin-top: 13px;
+	margin-left: 45%;
+}
+.testName {
+	float: left;
+	margin: 10px 10px;
+}
+.testName {
+	float: left;
+}
+li {
+	list-style: none;
+	margin: 10px 0;
+}
+.testLink {
+	float: right;
+	margin: 10px 10px;
+	padding-right: 40px;
+}
+.testLink a {
+	text-decoration: none;
+	color: black;
+}
