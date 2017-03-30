@@ -14,11 +14,9 @@ body {
 	
 }
 .testName {
-	float: left;
 	margin: 10px 10px;
-}
-.testName {
-	float: left;
+	margin-left: 40%;
+	display: inline-block;
 }
 li {
 	list-style: none;
@@ -26,9 +24,10 @@ li {
 	font-size: 2em;
 }
 .testLink {
-	float: right;
 	margin: 10px 10px;
+	margin-left: 80px;
 	padding-right: 40px;
+	display: inline-block;
 }
 .testLink a {
 	text-decoration: none;
@@ -59,4 +58,15 @@ li {
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
+}
+.author {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: lightgrey;
+	font-size: 2em;
+	vertical-align: center;
+	text-align: center;
+	line-height: 90px;
 }
