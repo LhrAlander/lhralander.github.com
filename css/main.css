@@ -70,3 +70,23 @@ li {
 	text-align: center;
 	line-height: 90px;
 }
+
+
+
+.test {
+	width: 500px;
+	height: 300px;
+	background-color: red;
+	position: relative;
+}
+.cd {
+	width:250px;
+	height: 150px;
+	background-color: black;
+	position: absolute;
+	margin: auto;
+	top: 500px;
+	bottom: 500px;
+	/*left: 100px;
+	right: 100px;*/
+}
