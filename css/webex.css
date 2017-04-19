@@ -1,0 +1,37 @@
+.post {
+	padding: 25px 0 15px 0;
+}
+.layout {
+	height: 680px;
+}
+
+.post ul,
+.post .desc {
+	color: #444;
+	font-size: 15px;
+	padding: 15px 0 0 40px;
+}
+
+.post li {
+	margin: 13px 0 0;
+}
+
+.post .desc-container {
+	width: 100%;
+	margin-top: 20px;
+	border: 1px solid transparent;
+	border-bottom-color: #ddd;
+	border-top-color: #ddd;
+}
+
+.post .desc {
+	width: 75%;
+	padding: 15px 0;
+	line-height: 40px;
+}
+
+.post .title {
+	color: #888;
+	font-size: 20px;
+	font-weight: normal;
+}
