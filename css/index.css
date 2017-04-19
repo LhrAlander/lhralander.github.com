@@ -201,9 +201,13 @@ div {
 }
 
 .foot {
-	width: 100%;
+	width: 75%;
 	height: 85px;
 	//border: 1px solid #ddd;
+	margin: 14px 0 0;
+	font-size: 14px;
+	color: #6E7173;
+	text-align: center;
 }
 
 
