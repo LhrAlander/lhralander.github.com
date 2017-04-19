@@ -1,0 +1,218 @@
+/*预处理*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+.head,
+.layout {
+	width: 820px;
+	margin: 0 auto;
+}
+
+.head {
+	height: 160px;
+	padding: 58px 0 0;
+	color: #999;
+	border: 1px transparent solid;
+	border-bottom: 1px solid #ddd;
+}
+
+.head .site-name {
+	font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;;
+}
+
+.head .user-desc {
+	font-size: 14px;
+}
+
+.nav-menu {
+	width: 246px;
+	height: 40px;
+	float: right;
+	display: flex;
+	justify-content: space-between;
+	color: #444;
+}
+
+.nav-menu div {
+	width: 82px;
+	color: #444;
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-menu div i,
+.post-meta i,
+.widget-title i {
+	margin-right: 4px;
+}
+.nav-menu .disabled:hover {
+	border: 1px transparent solid;
+	border-bottom-color: #444;
+}
+
+.nav-menu-current {
+	border: 1px #ddd solid;
+	border-bottom: 1px solid white;
+}
+
+/*内容区*/
+.layout {
+	//height: 1800px;
+	border: 1px solid transparent;
+	font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cnt-container {
+	width: 75%;
+	height: 100%;
+	padding: 20px 50px 0 0;
+	border: 1px solid transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+.cnt-container .post {
+	width: 100%;
+	height: 169px;
+	padding: 25px 0 15px 0;
+	border: 1px solid transparent;
+}
+.cnt-container .page-navigator {
+	width: 100%;
+	height: 85px;
+	margin-top: 25px;
+	padding: 25px 0 0 0;
+	border: 1px solid transparent;
+	border-top: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+}
+.page-navigator .pre-page,
+.page-navigator .next-page {
+	width: 60px;
+	height: 34px;
+	border: 1px solid #ddd;
+	color: #6E7173;
+	font-size: 14px;
+	text-align: center;
+	line-height: 34px;
+}
+
+.page-navigator .pre-page,
+.page-navigator .next-page {
+	visibility: hidden;
+}
+.page-num {
+	line-height: 34px;
+}
+.page-num .num {
+	border: 1px solid #ddd;
+	padding: 5px 9px;
+	margin: 0 5px 5px 0;
+	font-size: 14px;
+}
+.page-num .current {
+	background: #F8F8F8;
+	border-bottom-color: #D26911
+}
+.post .title {
+	color: #555;
+	font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+}
+.post .post-meta {
+	margin: 15px 0 0;
+	color: #6E7173;
+	font-size: 14px;
+}
+.post .post-cnt {
+	padding-top: 15px;
+	font-size: 15px;
+	line-height: 1.77;
+	color: #444;
+}
+
+.post .readmore i,
+.page-navigator .next-page i {
+	margin-left: 5px;
+}
+
+.post .readmore a{
+	margin: 10px 0;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	float: right;
+}
+
+.post .readmore a:hover,
+.page-navigator .next-page:hover,
+.page-num .num:hover {
+	border-bottom: 1px solid #D26911;
+	background: #F8F8F8;
+}
+
+
+.sidebar-container {
+	width: 25%;
+	height: 250px;
+	margin-top: 47px;
+	padding: 0 0 20px 35px;
+	border: 1px solid transparent;
+	border-left-color: #ddd;
+}
+
+.sidebar-container .widget-title {
+	height: 43px;
+	color: #6E7173;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+	line-height: 40px;
+}
+
+.widget {
+	margin-bottom: 30px;
+}
+.widget ul {
+	list-style: none;
+	padding: 0;
+	margin: 14px 0;
+}
+
+.widget ul li {
+	margin: 10px 0;
+	color: #444;
+	font-size: 14px;
+}
+
+.foot {
+	width: 100%;
+	height: 85px;
+	//border: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+/**未完成的部分设置**/
+.not-allowed:hover {
+	cursor: not-allowed;
+}

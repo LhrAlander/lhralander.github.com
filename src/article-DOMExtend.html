@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>MarkdownPad Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h2 id="-api">选择符API</h2>
+<p><strong>核心内容是使编程人员可以通过css选择符定位到DOM中的节点</strong><br><strong>1.querySelector()方法</strong><br>该方法接收一个css选择符，返回与该选择符匹配的 <strong> <em>第一个</em> </strong>元素，如果没有匹配的元素则返回NULL。<br>同时，当通过<em> Element </em>类型调用querySelector()方法时，只会在该元素后代元素中查找匹配的元素。</p>
+<pre><code>//取得body元素 
+var body = document.querySelector(&quot;body&quot;);
+//取得ID为myDiv的元素
+var myDiv = document.querySelector(&quot;#myDiv&quot;)
+//取得类为&quot;selected&quot;的第一个元素
+var selected = document.querySelector(&quot;.selected&quot;);
+//取得类为&quot;button&quot;的第一个img元素
+var img = document.body.querySelector(&quot;img.button&quot;);</code></pre>
+<p><strong>2.querySelectorAll()方法</strong><br>接收的参数与 <strong> <em>querySelector()</em> </strong>方法一样。该方法返回的是所有匹配到的元素，是一个 NodeList 的实例。</p>
+<pre><code>//取得某&lt;div&gt;中的所有&lt;em&gt;元素（类似于getElementsByTagName(&quot;em&quot;)）
+var ems = document.getElementById(&quot;myDiv&quot;).querySelectorAll(&quot;em&quot;);
+//取得类为“selected”的所有元素
+var selecteds = document.querySelectorAll(&quot;.selected&quot;);</code></pre>
+<p>要取得NodeList中的每一个元素可以通过类似访问数组的方括号方式，也可以使用item()方法。</p>
+<h2 id="-">关于元素的遍历</h2>
+<p>对于元素间的空格很多浏览器都会将其返回为文本节点：</p>
+<pre><code>&lt;div&gt;
+    &lt;li&gt;1&lt;/li&gt;
+    &lt;li&gt;2&lt;/li&gt;
+    &lt;li&gt;3&lt;/li&gt;
+&lt;/div&gt;</code></pre>
+<p>对于以上代码我们访问div的子节点个数可能是7个，因为换行/空格都被算为一个文本节点返回了，解决的办法可以是简单的压缩html代码：</p>
+<pre><code>&lt;div&gt;&lt;li&gt;1&lt;/li&gt;&lt;li&gt;2&lt;/li&gt;&lt;li&gt;3&lt;/li&gt;&lt;/div&gt;</code></pre>
+<p>实际上在这里记录的是另一种方法，DOM扩展了5个属性<br><code>childElementCount</code>:返回子元素（不包括文本节点和注释）的个数<br><code>firseElementChild</code>:指向第一个子元素；<code>firstChild</code>的元素版<br><code>lastElementChild</code>:指向第一个子元素；<code>lastChild</code>的元素版<br><code>previousElementSibling</code>:指向第一个子元素；<code>previousSibling</code>的元素版<br><code>nextElementSibling</code>:指向第一个子元素；<code>nextSibling</code>的元素版<br>具体使用就像以前使用firstChild那些属性一样。</p>
+<h2 id="-">与类相关的扩充</h2>
+<p><strong>1.getElementsByClassName()方法</strong><br>该方法接收一个参数，一个包含一个或多个类名的字符串，返回<strong> <em>带有 </em> </strong>指定类的所有元素的NodeList。传入多个类名时，类名的先后顺序不重要。</p>
+<pre><code>//取得所有类中包含&quot;username&quot;和&quot;current&quot;的元素，类名的先后顺序不重要
+var allCurrentUsernames = document.getElementsByClassName(&quot;username current&quot;);
+//取得ID为&quot;myDiv&quot;的元素中带有类名&quot;selected&quot;的所有元素
+var selected =document.getElementById(&quot;myDiv&quot;).getElementsByClassName(&quot;selected&quot;):</code></pre>
+<p><strong>2.classList 属性</strong><br>className属性是一个字符串，所以当我们在修改一个元素的类名时即使是看起来十分简单的要求也需要通过修改整个字符串来实现。<br>但是HTML5 为所有的元素添加了classList这个属性。该属性是新集合类型DOMTokenList的实例。关于这个新集合类型，在写这篇笔记的时候也是第一次接触，所以应该会穿插在之后的笔记中来记录。今天介绍的是classList属性定义的一些方法：<br><code>add(value)</code>:将给定的字符串值添加到列表中，如果已存在则不添加<br><code>contains(value)</code>:若列表中已存在该值返回TRUE，否则返回FALSE<br><code>remove(value)</code>:从列表中删除给定的字符串<br><code>toggle(value)</code>:若列表中已存在给定值则删除它，否则添加它<br>使用方法：</p>
+<pre><code>//删除&quot;disabled&quot;类
+div.classList.remove(&quot;disabled&quot;);
+//添加&quot;current&quot;类
+div.classList.add(&quot;current&quot;);
+//切换&quot;user&quot;类
+div.classList.toggle(&quot;user&quot;);</code></pre>
+<h2 id="-">后记</h2>
+<p><strong>勤练带来力量</strong><br>关于初学JavaScript这件事或者说是所有初学的东西，即使是别人看起来很少很简单的内容却仍然要花上许多时间去学习。所以以前从没认识到的每天的坚持和勉励突然间就变得如此重要。记录日记也是逼迫自己每天学习的方式之一吧。</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
