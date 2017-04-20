@@ -28,19 +28,23 @@ function initpage(e) {
 function createpage(jsstr, pageindex) {
 	var jsobj = eval(jsstr);
 	var obj = [];
-	pagenum = jsobj.length;
+	var startindex,
+		endindex;
 	currentpn = pageindex;
+	pagenum=Math.ceil(jsobj.length/6);
 	createpageNavigator();
-	var pageobj = jsobj[pageindex];
-	for (var i = 0; i < pageobj.length; i++) {
+	startindex=pageindex*6;
+	endindex=jsobj.length-1;
+	if(jsobj.length>=6*(pageindex+1)){
+		endindex=6*(pageindex+1)-1;
+	}
+	for (var i = startindex; i <= endindex; i++) {
 		var post = $('<div class="post"><h1 class="title"><a>EX04</a></h1><div class="post-meta"><i class="fa fa-calendar"></i></div><div class="post-cnt"></div><p class="readmore"><a href="src/ex04.html">more<i class="fa fa-angle-double-right"></i></a> </p></div>');
-
-
-		post.children('.title').children('a').attr('href', pageobj[i].src);
-		post.children('.title').children('a').text(pageobj[i].title);
-		post.children('.post-meta').append(pageobj[i].postmeta);
-		post.children('.post-cnt').text(pageobj[i].postcnt);
-		post.children('.readmore').children('a').attr('href', pageobj[i].src);
+		post.children('.title').children('a').attr('href', jsobj[i].src);
+		post.children('.title').children('a').text(jsobj[i].title);
+		post.children('.post-meta').append(jsobj[i].postmeta);
+		post.children('.post-cnt').text(jsobj[i].postcnt);
+		post.children('.readmore').children('a').attr('href', jsobj[i].src);
 
 		obj.push(post);
 	}

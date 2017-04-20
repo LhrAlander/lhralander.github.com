@@ -209,14 +209,3 @@ div {
 	color: #6E7173;
 	text-align: center;
 }
-
-
-
-
-
-
-
-/**未完成的部分设置**/
-.not-allowed:hover {
-	cursor: not-allowed;
-}

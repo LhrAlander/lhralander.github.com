@@ -1,5 +1,5 @@
 [
-	[{
+	{
 		"title": "EX06",
 		"postmeta": "2017-4-14",
 		"postcnt": "实验六实验报告",
@@ -14,5 +14,5 @@
 		"postmeta": "2017-3-30",
 		"postcnt": "实验三实验报告",
 		"src": "src/copyTB.html"
-	}]
+	}
 ]

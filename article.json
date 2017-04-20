@@ -1,5 +1,11 @@
 [
-[
+	{
+		"title": "2017-4-20一段时间的总结",
+		"postmeta": "2017-4-20",
+		"postcnt": "算是对过去没有记录简书的日子的总结吧",
+		"src": "../src/article-4-20.html"
+	},
+
 	{
 		"title": "CSS.Serects 形状的绘制",
 		"postmeta": "2017-4-7",
@@ -15,8 +21,7 @@
 		"postmeta": "2017-4-3",
 		"postcnt": "在W3CSchool上的学习",
 		"src": "../src/article-JQuery.html"
-	},
-	{
+	}, {
 		"title": "DOM扩展内容小记",
 		"postmeta": "2017-3-29",
 		"postcnt": "在看JavaScript DOM编程艺术所记录的笔记",
@@ -31,7 +36,6 @@
 		"postmeta": "2017-3-21",
 		"postcnt": "对于事件的实验和记录",
 		"src": "../src/article-JavaScriptEvent.html"
-	},
-]
+	}
 
 ]
