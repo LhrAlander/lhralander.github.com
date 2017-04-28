@@ -1,4 +1,4 @@
-/*为主页实现自动填充内容和分页的功能，
+﻿/*为主页实现自动填充内容和分页的功能，
  * 一页有6个post
  */
 var jsonstr, //数据
@@ -78,3 +78,5 @@ function changepage() {
 	$('.cnt-container').children('.post').remove();
 	createpage(jsonstr, pageindex);
 }
+
+

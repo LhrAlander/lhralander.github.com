@@ -1,0 +1,423 @@
+body {
+	background: lightgrey;
+}
+div {
+	box-sizing: border-box;
+}
+
+.fn-align-center {
+	display: flex;
+	align-items: center;
+}
+
+.fn-ver-center {
+	justify-content: center;
+}
+
+.fn-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ui-color-orange {
+	background: rgb(255,137,5);
+}
+
+.ui-color-red {
+	background: rgb(255,102,64);
+}
+
+.ui-color-blue {
+	background: rgb(112,137,246);
+}
+
+.ui-color-lightblue {
+	background: rgb(0,205,240);
+}
+.ui-color-yellow {
+	background: rgb(255,187,83);
+}
+
+
+
+
+
+.head-container {
+	height: 235px;
+	border: 0 solid transparent;
+	border-bottom-color: rgb(225,220,210);
+}
+.head-top {
+	height: 55px;
+	color: #fff;
+	background: #00c2ae;
+	border: 1px solid transparent;
+	border-bottom-color: rgb(0,147,132);
+}
+
+.head-top-left {
+	font-size: 17px;
+}
+
+.top-left-sign {
+	margin-left: 6px;
+	font-size: 15px;
+	opacity: .5;
+}
+
+.head-top-center {
+	width: 100%;
+	height: 35px;
+	background: rgb(0,165,148);
+	border-radius: 3px;
+	font-size: 15px;
+}
+
+.top-center-search {
+	margin-left: -4px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.head-top-center span {
+	font-size: 18px;
+	opacity: .5;
+}
+.head-top-right .fa-user-o{
+	font-size: 20px;
+}
+
+.head-top-right span {
+	font-size: 12px;
+}
+.head-bd {
+	height: 150px;
+	background: #fff;
+}
+.head-bd-cnt .cnt {
+	height: 75px;
+	flex-direction: column;
+	color: #777
+}
+.head-bd-cnt .cnt .img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.head-bd-cnt .des {
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.head-bd-foot {
+	height: 30px;
+	background: #fff;
+}
+
+.head-bd-foot .cnt {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ddd;
+	margin-right: 20px;
+}
+
+.head-bd-foot .current {
+	background: rgb(0,194,174);
+}
+
+.cnt1 {
+	height: 160px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #fff;
+}
+
+.cnt1 .left {
+	height: 160px;
+	padding-right: 0;
+}
+
+.cnt1 .left .cnt {
+	width: 109px;
+	height: 150px;
+	border: 0px solid #ddd;
+	border-right: 1px solid #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cnt1 .left .img {
+	width: 88px;
+	height: 88px;
+	background: rgb(102,102,102);
+}
+.cnt1 .left .title {
+	font-size: 14px;
+	margin-bottom: 12px;
+	color: rgb(0,164,0);
+	font-weight: bold;
+}
+.cnt1 .left .des {
+	font-size: 10px;
+	margin: 0;
+}
+
+.cnt1 .right {
+	height: 160px;
+}
+
+.cnt1 .right-cnt {
+	padding: 0;
+}
+.cnt1 .right-top,
+.cnt1 .right-bt {
+	height: 50%;
+	border: 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.cnt1 .right-top-cnt {
+	height: 100%;
+}
+
+.cnt1 .right-top .des {
+	margin-right: 26px;
+}
+
+.cnt1 .right-top .img{
+	width: 65px;
+	height: 65px;
+	background: rgb(102,102,102);
+}
+
+.cnt1 .right-top .title {
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(255,60,0);
+}
+
+.cnt1  .detail {
+	font-size: 12px;
+}
+.cnt1 .right-bt .left {
+	height: 80px;
+}
+
+.cnt1 .right-bt .left .des {
+	height: 35px;
+}
+
+.cnt1 .right-bt .des {
+	height: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cnt1 .right-bt .title {
+	color: rgb(255,60,160);
+	margin:5px 0 5px 0;
+}
+
+.cnt1 .right-bt .img {
+	width: 40px;
+	height: 40px;
+	background: rgb(102,102,102);
+	margin-left: 20px;
+}
+
+.cnt1 .right-bt .right {
+	height: 75px;
+	border: 0;
+	border-left: 1px solid #ddd;
+}
+
+.cnt1 .right-bt .right .title {
+	font-weight: bold;
+	color: rgb(255,135,0);
+}
+
+.cnt1 .time {
+	height: 30px;
+	display: flex;
+	align-items: flex-end;
+}
+.cnt1 .time div {
+	width: 20px;
+	height: 15px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	background: rgb(75,75,75);
+}
+
+.cnt2 .row {
+	height: 80px;
+	background: #fff;
+	margin-bottom: 15px;
+}
+
+.cnt2 .img {
+	width: 65px;
+	height: 65px;
+	background: rgb(102,102,102);
+}
+
+.cnt2 .left,
+.cnt2 .right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	border: 0;
+	border-right: 1px solid #ddd;
+}
+
+.cnt2 .cnt {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.cnt2 .des {
+	height: 35px;
+}
+.cnt2 .title {
+	color: rgb(255,60,0);
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.cnt2 .detail {
+	font-size: 12px;
+}
+
+
+.cnt3 {
+	background: #fff;
+}
+
+.cnt3 .cnt {
+	height: 103px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+.cnt3 .top-title {
+	height: 42px;
+	border: 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+	margin-left: 0;
+}
+
+.cnt3 .cnt .img {
+	width: 80px;
+	height: 80px;
+	padding: 1px;
+	background: linear-gradient(135deg,rgb(102,102,102) 15px,rgb(102,102,102) 0,rgb(0,194,174) 15px,rgb(0,194,174) 35px,rgb(102,102,102) 0,rgb(102,102,102) 100%);
+}
+
+.cnt3 .cnt .free {
+	transform: rotate(-45deg);
+	color: #fff;
+	font-size: 12px;
+	margin-left: -9px;
+	margin-top: -8px;
+}
+
+.cnt3 .right .cnt {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border: none;
+}
+
+.cnt3 .cnt .right .top,
+.cnt3 .cnt .right .bt {
+	height: 40px;
+}
+
+.cnt3 .cnt .right .top .title,
+.cnt3 .cnt .right .top .detail {
+	margin: 0;
+}
+
+.cnt3 .cnt .right .top .detail {
+	font-size: 12px;
+}
+
+.cnt3 .cnt .right .bt {
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	color: rgb(0,194,174);
+}
+
+.cnt3 .cnt .right .bt .left {
+	width: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.cnt3 .cnt .right .price {
+	font-size: 18px;
+	color: rgb(0,194,174);
+	display: flex;
+}
+
+.cnt3 .cnt .right .sale {
+	width: 50px;
+	height: 23px;
+	font-size: 12px;
+	color: rgb(255,153,0);
+	border: 1px solid rgb(255,153,0);
+	border-radius: 5px;
+	margin-left: 8px;
+}
+.cnt3 .cnt .right .saled {
+	color: #777;
+}
+
+.cnt3 .cnt .right .pre-price {
+	font-size: 12px;
+	color: #777;
+	margin-left: 7px;
+}
+
+.cnt3 .cnt .no-free {
+	background: rgb(102,102,102);
+}
+.cnt3 .foot {
+	height: 40px;
+	font-size: 15px;
+	background: rgb(143,198,234);
+	color: rgb(0,177,206);
+}
+
+.cnt3 .foot .cnt {
+	width: 100%;
+	height: 40px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.cnt3 .foot .cnt .des {
+	margin: 0;
+}
+.cnt3 .foot .cnt .fa {
+	font-size: 20px;
+}

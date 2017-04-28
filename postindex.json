@@ -1,5 +1,15 @@
 [
 	{
+		"title": "EX07_2",
+		"postmeta": "2017-4-28",
+		"postcnt": "实验七第二题实验报告",
+		"src": "src/ex07-2.html"
+	},{
+		"title": "EX07_1",
+		"postmeta": "2017-4-28",
+		"postcnt": "实验七第一题实验报告",
+		"src": "src/ex07.html"
+	},{
 		"title": "EX05",
 		"postmeta": "2017-4-21",
 		"postcnt": "实验五实验报告",
