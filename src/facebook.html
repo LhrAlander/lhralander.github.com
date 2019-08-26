@@ -15,46 +15,49 @@
     <p id="err"></p>
   </div>
   <script>
-    window.extAsyncInit = function () {
-      document.querySelector('#tidLabel', '487910228635356')
-      MessengerExtensions.getContext(
-        '487910228635356',
-        function success(context) {
-          document.getElementById("tidLabel").innerText = "tid:" + context.tid;
-          document.getElementById("thread_typeLabel").innerText = "thread_type:" + context.thread_type;
-          document.getElementById("psidLabel").innerText = "psid:" + context.psid;
-          document.getElementById("signed_requestLabel").innerText = "signed_request:" + context.signed_request;
-          document.getElementById("err").innerText = "成功:" + context.toString();
-          console.log("成功");
-        }, function error(err) {
-          console.log("失败" + err);
-          document.getElementById("err").innerText = "失败:" + err.toString();
-        });
-      MessengerExtensions.askPermission(
-        function (permission_response) {
-          // Person grants or rejects the asked permission.
-          let permissions = permission_response.permissions; // list of all permissions granted
-          let isGranted = permission_response.isGranted;
+    try {
+      window.extAsyncInit = function () {
+        MessengerExtensions.getContext(
+          '487910228635356',
+          function success(context) {
+            document.getElementById("tidLabel").innerText = "tid:" + context.tid;
+            document.getElementById("thread_typeLabel").innerText = "thread_type:" + context.thread_type;
+            document.getElementById("psidLabel").innerText = "psid:" + context.psid;
+            document.getElementById("signed_requestLabel").innerText = "signed_request:" + context.signed_request;
+            document.getElementById("err").innerText = "成功:" + context.toString();
+            console.log("成功");
+          }, function error(err) {
+            console.log("失败" + err);
+            document.getElementById("err").innerText = "失败:" + err.toString();
+          });
+        MessengerExtensions.askPermission(
+          function (permission_response) {
+            // Person grants or rejects the asked permission.
+            let permissions = permission_response.permissions; // list of all permissions granted
+            let isGranted = permission_response.isGranted;
 
-          if (isGranted) {
-            document.getElementById("err").innerText = "成功:" + permission_response.toString();
-            console.log("授权成功");
-          }
+            if (isGranted) {
+              document.getElementById("err").innerText = "成功:" + permission_response.toString();
+              console.log("授权成功");
+            }
 
-        }, function (errorCode, errorMessage) {
-          console.log("授权失败" + errorMessage);
-          document.getElementById("err").innerText = "失败:" + errorMessage.toString();
+          }, function (errorCode, errorMessage) {
+            console.log("授权失败" + errorMessage);
+            document.getElementById("err").innerText = "失败:" + errorMessage.toString();
 
-        }, "user_profile"
-      );
-    };
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { return; }
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'Messenger'));
+          }, "user_profile"
+        );
+      };
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'Messenger'));
+    } catch (err) {
+      document.getElementById("err").innerText = "失败:" + err.toString();
+    }
   </script>
 </body>
 
