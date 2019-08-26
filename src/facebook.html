@@ -10,6 +10,7 @@
         <p id="thread_typeLabel"></p>
         <p id="psidLabel"></p>
         <p id="signed_requestLabel"></p>
+        <p id="err"></p>
     </div>
     <script>
     window.extAsyncInit = function() {
@@ -24,6 +25,7 @@
             console.log("成功");
           }, function error(err) {
             console.log("失败" + err);
+            document.getElementById("err").innerText = "失败:" + err.toString();
         });
         MessengerExtensions.askPermission(
             function(permission_response) {
@@ -37,6 +39,8 @@
     
         }, function(errorCode, errorMessage) {
             console.log("授权失败"+errorMessage);
+            document.getElementById("err").innerText = "失败:" + errorMessage.toString();
+
         },"user_profile"
         );
       };
